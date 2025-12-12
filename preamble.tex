@@ -1,0 +1,101 @@
+\usepackage[spanish]{babel}
+
+% =====================================================
+% Fuente local dentro del proyecto (NO depende del sistema)
+% =====================================================
+\usepackage{fontspec}
+\setmainfont[
+  Path = fonts/,
+  UprightFont = Lato-Regular.ttf,
+  ItalicFont = Lato-Italic.ttf,
+  BoldFont = Lato-Bold.ttf,
+  BoldItalicFont = Lato-BoldItalic.ttf
+]{Lato}
+
+% =====================================================
+% Paquetes básicos
+% =====================================================
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% =====================================================
+% Márgenes tipo libro (A4, doble faz)
+% =====================================================
+\geometry{
+  a4paper,
+  inner=3.0cm,
+  outer=2.2cm,
+  top=2.5cm,
+  bottom=2.5cm
+}
+
+% =====================================================
+% Estilo de párrafos (opcional pero suele quedar mejor para apuntes)
+% =====================================================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% =====================================================
+% Interlineado tipo libro (académico)
+% =====================================================
+\usepackage{setspace}
+\onehalfspacing
+
+% =====================================================
+% Encabezados y pies de página estilo libro
+% Página par: capítulo | Página impar: título del apunte
+% Número de página en el exterior
+% =====================================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyhead[RO]{\nouppercase{\textit{Título del Apunte}}}
+
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{14.5pt}
+
+% Quitar "Capítulo X" del encabezado (deja solo el nombre)
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% =====================================================
+% Estilo visual de capítulos (más libro/editorial)
+% =====================================================
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\huge\bfseries}
+  {\thechapter.}
+  {1em}
+  {}
+\titlespacing*{\chapter}
+  {0pt}
+  {3.5cm}
+  {1.5cm}
+
+% =====================================================
+% Ajustes académicos: captions + ecuaciones por capítulo
+% =====================================================
+\usepackage{caption}
+\captionsetup{
+  font=small,
+  labelfont=bf
+}
+
+\numberwithin{equation}{chapter}
+
+% =====================================================
+% Hyperref sobrio (links negros)
+% =====================================================
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}

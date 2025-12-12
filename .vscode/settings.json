@@ -1,0 +1,28 @@
+{
+  "latex-workshop.latex.outDir": "./out",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=out",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "LuaLaTeX (directo)",
+      "tools": ["lualatex"]
+    }
+  ],
+
+  "latex-workshop.latex.recipe.default": "LuaLaTeX (directo)",
+
+  "latex-workshop.latex.clean.enabled": false
+}
