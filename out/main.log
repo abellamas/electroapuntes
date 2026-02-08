@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.12.12)  12 DEC 2025 05:25
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.12.12)  8 FEB 2026 17:47
  restricted system commands enabled.
  file:line:error style messages enabled.
-**c:/Users/abell/Desktop/UNTREF/LaTexProject/main
-(c:/Users/abell/Desktop/UNTREF/LaTexProject/main.tex
+**c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/main
+(c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -368,7 +368,32 @@ File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
 \Gin@req@height=\dimen161
 \Gin@req@width=\dimen162
 )
-(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen163
+\captionmargin=\dimen164
+\caption@leftmargin=\dimen165
+\caption@rightmargin=\dimen166
+\caption@width=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count308
+\c@continuedfloat=\count309
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count310
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count311
+) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
@@ -418,26 +443,26 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count308
+\c@section@level=\count312
 )
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count309
+\etb@tempcnta=\count313
 )
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen163
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
+\@linkdim=\dimen171
+\Hy@linkcounter=\count314
+\Hy@pagecounter=\count315
  (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 ) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count312
+\Hy@SavedSpaceFactor=\count316
  (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 )
@@ -448,14 +473,14 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count313
+\c@Hy@tempcnt=\count317
 
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen164
+\XeTeXLinkMargin=\dimen172
 
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -465,9 +490,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count314
-\Field@Width=\dimen165
-\Fld@charsize=\dimen166
+\Fld@menulength=\count318
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -475,16 +500,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
+\Hy@abspage=\count319
+\c@Item=\count320
+\c@Hfootnote=\count321
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
 File: hluatex.def 2025-07-12 v7.01o Hyperref driver for luaTeX
-\Fld@listcount=\count318
-\c@bookmark@seq@number=\count319
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
 
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfil
 echeck.sty
@@ -505,20 +530,22 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count320
-\Gm@cntv=\count321
-\c@Gm@tempcnt=\count322
-\Gm@bindingoffset=\dimen167
-\Gm@wd@mp=\dimen168
-\Gm@odd@mp=\dimen169
-\Gm@even@mp=\dimen170
-\Gm@layoutwidth=\dimen171
-\Gm@layoutheight=\dimen172
-\Gm@layouthoffset=\dimen173
-\Gm@layoutvoffset=\dimen174
+\Gm@cnth=\count324
+\Gm@cntv=\count325
+\c@Gm@tempcnt=\count326
+\Gm@bindingoffset=\dimen175
+\Gm@wd@mp=\dimen176
+\Gm@odd@mp=\dimen177
+\Gm@even@mp=\dimen178
+\Gm@layoutwidth=\dimen179
+\Gm@layoutheight=\dimen180
+\Gm@layouthoffset=\dimen181
+\Gm@layoutvoffset=\dimen182
 \Gm@dimlist=\toks25
 
-(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg)) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty
+(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg)) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -543,37 +570,23 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip69
 \aftertitleunit=\skip70
-\ttl@plus=\dimen175
-\ttl@minus=\dimen176
+\ttl@plus=\dimen183
+\ttl@minus=\dimen184
 \ttl@toksa=\toks27
-\titlewidth=\dimen177
-\titlewidthlast=\dimen178
-\titlewidthfirst=\dimen179
-) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen180
-\captionmargin=\dimen181
-\caption@leftmargin=\dimen182
-\caption@rightmargin=\dimen183
-\caption@width=\dimen184
-\caption@indent=\dimen185
-\caption@parindent=\dimen186
-\caption@hangindent=\dimen187
-Package caption Info: Standard document class detected.
+\titlewidth=\dimen185
+\titlewidthlast=\dimen186
+\titlewidthfirst=\dimen187
 )
-\c@caption@flags=\count323
-\c@continuedfloat=\count324
-Package caption Info: hyperref package is loaded.
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 101.
-) (c:/Users/abell/Desktop/UNTREF/LaTexProject/out/main.aux
+Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+) (c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/out/main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
+
+
+LaTeX Warning: Label `fig:masa_compliancia_modelo_completo' multiply defined.
+
 )
 \openout1 = main.aux
 
@@ -660,16 +673,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
+\scratchcounter=\count327
 \scratchdimen=\dimen188
 \scratchbox=\box56
-\nofMPsegments=\count326
-\nofMParguments=\count327
+\nofMPsegments=\count328
+\nofMParguments=\count329
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count328
+\MPscratchCnt=\count330
 \MPscratchDim=\dimen189
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
 \everyMPtoPDFconversion=\toks29
 )
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
@@ -681,7 +694,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/graphics/color.sty
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/graphics/color.sty
 Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -689,8 +706,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: luatex.def on input line 149.
 (C:/Users/abell/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 5.
- (c:/Users/abell/Desktop/UNTREF/LaTexProject/out/main.out)
-(c:/Users/abell/Desktop/UNTREF/LaTexProject/out/main.out)
+ (c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/out/main.out)
+(c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/out/main.out)
 \@outlinefile=\write3
 
 \openout3 = main.out
@@ -729,8 +746,6 @@ Package hyperref Info: Link coloring ON on input line 5.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 (./cover.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
@@ -750,25 +765,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/abell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) [2
 
 ]
-(c:/Users/abell/Desktop/UNTREF/LaTexProject/out/main.toc
+(c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/out/main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write4
 
-\openout4 = main.toc
+Underfull \vbox (badness 3514) has occurred while \output is active []
+
 
 
 LaTeX Font Warning: Font shape `TU/Lato(0)/m/sc' undefined
-(Font)              using `TU/Lato(0)/m/n' instead on input line 15.
+(Font)              using `TU/Lato(0)/m/n' instead on input line 21.
 
 
 Package spanish Warning: Replacing `TU/Lato(0)/m/sc' by 
-(spanish)                faked small caps on input line 15.
+(spanish)                faked small caps on input line 21.
 
 [1
 
-]
+])
+\tf@toc=\write4
+
+\openout4 = main.toc
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -785,25 +802,158 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 Package spanish Warning: Replacing `TU/Lato(0)/m/sc' by 
 (spanish)                faked small caps on input line 15.
 
-[2
-
-]
+[2]
 Capítulo 1.
-(./sections/01-intro.tex)
+(./sections/01-intro.tex
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
+
 ]
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2
+[2] [3]
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [4] [5]
+<figures/cap1/compliance_diaphragm.png, id=239, 545.78906pt x 224.33812pt>
+File: figures/cap1/compliance_diaphragm.png Graphic file (type png)
+<use figures/cap1/compliance_diaphragm.png>
+Package luatex.def Info: figures/cap1/compliance_diaphragm.png  used on input l
+ine 186.
+(luatex.def)             Requested size: 314.68617pt x 129.346pt.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+ [6<./figures/cap1/compliance_diaphragm.png>]
+<figures/cap1/masa_acustica_ideal.png, id=247, 345.54094pt x 184.43906pt>
+File: figures/cap1/masa_acustica_ideal.png Graphic file (type png)
+<use figures/cap1/masa_acustica_ideal.png>
+Package luatex.def Info: figures/cap1/masa_acustica_ideal.png  used on input li
+ne 206.
+(luatex.def)             Requested size: 202.29776pt x 107.98224pt.
+<figures/cap1/compliancia_acustica_ideal.png, id=248, 323.70938pt x 175.40532pt
+>
+File: figures/cap1/compliancia_acustica_ideal.png Graphic file (type png)
+<use figures/cap1/compliancia_acustica_ideal.png>
+Package luatex.def Info: figures/cap1/compliancia_acustica_ideal.png  used on i
+nput line 213.
+(luatex.def)             Requested size: 202.29776pt x 109.61734pt.
+<figures/cap1/masa_acustica_corregida.png, id=250, 429.10312pt x 182.18062pt>
+File: figures/cap1/masa_acustica_corregida.png Graphic file (type png)
+<use figures/cap1/masa_acustica_corregida.png>
+Package luatex.def Info: figures/cap1/masa_acustica_corregida.png  used on inpu
+t line 230.
+(luatex.def)             Requested size: 202.29776pt x 85.88898pt.
+<figures/cap1/compliancia_acustica_corregida.png, id=251, 428.35031pt x 186.697
+5pt>
+File: figures/cap1/compliancia_acustica_corregida.png Graphic file (type png)
+<use figures/cap1/compliancia_acustica_corregida.png>
+Package luatex.def Info: figures/cap1/compliancia_acustica_corregida.png  used 
+on input line 237.
+(luatex.def)             Requested size: 202.29776pt x 88.17229pt.
+ [7<./figures/cap1/masa_acustica_ideal.png><./figures/cap1/compliancia_acustica_
+ideal.png><./figures/cap1/masa_acustica_corregida.png><./figures/cap1/complianci
+a_acustica_corregida.png>]
+<figures/cap1/masa_compliancia_modelo_completo.png, id=265, 469.755pt x 241.652
+82pt>
+File: figures/cap1/masa_compliancia_modelo_completo.png Graphic file (type png)
+
+<use figures/cap1/masa_compliancia_modelo_completo.png>
+Package luatex.def Info: figures/cap1/masa_compliancia_modelo_completo.png  use
+d on input line 251.
+(luatex.def)             Requested size: 202.29776pt x 104.06723pt.
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
+ [8<./figures/cap1/masa_compliancia_modelo_completo.png>]
+<figures/cap1/acoustic_resistances_section_losses_viscosity.png, id=275, 456.20
+438pt x 205.5178pt>
+File: figures/cap1/acoustic_resistances_section_losses_viscosity.png Graphic fi
+le (type png)
+<use figures/cap1/acoustic_resistances_section_losses_viscosity.png>
+Package luatex.def Info: figures/cap1/acoustic_resistances_section_losses_visco
+sity.png  used on input line 287.
+(luatex.def)             Requested size: 202.29776pt x 91.1337pt.
+ [9<./figures/cap1/acoustic_resistances_section_losses_viscosity.png>]
+
+LaTeX Warning: Citation `BeranekMellow2012' on page 10 undefined on input line 
+300.
+
+
+Overfull \hbox (2.2349pt too wide) in paragraph at lines 300--301
+[]\TU/Lato(0)/m/sc/12 Pa-ra un tra-ta-mien-to más de-ta-lla-do de los ma-te-ria
+-les re-sis-ti-vos, sus ecua-cio-nes y otros
+ []
+
+)
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+ [10]
+Capítulo 2.
+(./sections/02-altoparlantes.tex
+<figures/cap2/dipole_scheme.png, id=289, 635.37375pt x 407.27156pt>
+File: figures/cap2/dipole_scheme.png Graphic file (type png)
+<use figures/cap2/dipole_scheme.png>
+Package luatex.def Info: figures/cap2/dipole_scheme.png  used on input line 12.
+
+(luatex.def)             Requested size: 314.68617pt x 201.72122pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [11
 
 ]
-Capítulo 2.
-(./sections/02-teoria.tex) [3]
-(c:/Users/abell/Desktop/UNTREF/LaTexProject/out/main.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+ [12<./figures/cap2/dipole_scheme.png>]
+Capítulo 3.
+(./sections/03-gabinetes.tex) [13
+
+]
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+ [14
+
+]
+Capítulo 4.
+(./sections/04-varias_situaciones.tex) [15]
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+ [16
+
+]
+Capítulo 5.
+(./sections/05-tweeters.tex) (./sections/06-bocinas.tex)
+(./sections/07-drivers_comp.tex) [17]
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+ [18
+
+]
+Capítulo 6.
+(./sections/08-filtros_pasivos.tex) (./sections/09-filtros_activos.tex)
+[19]
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+ [20
+
+]
+Capítulo 7.
+(./sections/10-directividad.tex) [21]
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [22
+
+]
+Capítulo 8.
+(./sections/11-suma_fuentes.tex) (./sections/12-line_array.tex)
+No file main.bbl.
+[23] (c:/Users/abell/Desktop/UNTREF/EA2/electroapuntes/out/main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -815,20 +965,28 @@ L3 programming layer <2025-11-06>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F9B2243DD8C236D716017826E752FCAB;686.
+(rerunfilecheck)             Checksum: 1CEB743423273EC80A75AFACE776DF0C;5164.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16518 strings out of 476081
+ 16975 strings out of 476081
  100000,794899 words of node,token memory allocated
- 553 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 4 glue, 4 kern, 1 glyph, 12 attribute, 58 glue_spec
-, 8 attribute_list, 1 write nodes
-   avail lists: 2:265,3:98,4:52,5:81,6:30,7:958,8:11,9:138,10:9,11:114
- 38647 multiletter control sequences out of 65536+600000
- 56 fonts using 3030695 bytes
- 78i,12n,95p,306b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 758 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 78 attribute, 58 glue_spec
+, 41 attribute_list, 1 write nodes
+   avail lists: 2:745,3:218,4:144,5:221,6:62,7:5790,8:34,9:581,10:21,11:803
+ 38940 multiletter control sequences out of 65536+600000
+ 78 fonts using 4324495 bytes
+ 78i,12n,95p,1119b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 <./fonts/Lato-BoldItalic.ttf><//?/c:/users/abell/appdata/local/programs/miktex/f
 onts/opentype/public/lm/lmmono12-regular.otf><./fonts/Lato-Italic.ttf><./fonts/L
 ato-Bold.ttf><./fonts/Lato-Regular.ttf><C:/Users/abell/AppData/Local/Programs/Mi
@@ -840,10 +998,11 @@ bell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
 sers/abell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ><C:/Users/abell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Users/abell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb>
-Output written on main.pdf (7 pages, 113648 bytes).
+ts/cm/cmsy6.pfb><C:/Users/abell/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (27 pages, 406333 bytes).
 
-PDF statistics: 134 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 131072)
- 49 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 131072)
+ 273 words of extra memory for PDF output out of 10000 (max. 100000000)
 

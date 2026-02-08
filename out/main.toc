@@ -1,7 +1,35 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objetivo}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Prueba de estilos}{1}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Teoría}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Una ecuación}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Figura de ejemplo}{3}{section.2.2}%
+\contentsline {section}{\numberline {1.2}Componentes Acústicos}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Masa acústica}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Compliancia acústica}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Efectos parásitos y límites del modelo}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Resistencias Acústicas}{8}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Altoparlantes}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Altoparlante}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Altoparlante al aire libre}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Altoparlante en bafle infinito}{11}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Gabinetes}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Gabinete cerrado}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Gabinete abierto}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Gabinete ventilado}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Análisis de altoparlantes en varias situaciones}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Parlantes en paralelo}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Parlantes en serie}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Configuración isobárica}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Líneas de transmisión}{15}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Unidades de alta frecuencia}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tweeters}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bocinas}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Drivers de Compresion}{17}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Filtros de cruce}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Filtros pasivos 1er orden}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Filtros pasivos 2do orden}{19}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Filtros Activos}{19}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Filtros Linkwitz-Riley}{19}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Directividad}{21}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Directividad}{21}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Arreglos lineales}{23}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Suma de fuentes}{23}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Line Array}{23}{section.8.2}%

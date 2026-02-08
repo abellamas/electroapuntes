@@ -1,5 +1,301 @@
 \section{Objetivo}
 Este apunte está en formato libro (clase \texttt{book}) en hoja A4, con fuente Lato cargada desde la carpeta \texttt{fonts/}.
 
-\section{Prueba de estilos}
+\section{Componentes Acústicos}
 \textbf{Negrita}, \textit{itálica}, \textbf{\textit{negrita-itálica}}.
+
+En Electroacústica se realiza el analisis de sistemas a partir de modelos eléctricos ieales que son validos bajo ciertas condiciónes, es así que se refiere a ellos como \textit{lumped elements} en bibliografía como Beranek 2012, de forma simple se puede determinar que estos modelos son válidos para cuando la longitud de onda $\lambda$ es menor que el tamaño físico de los elementos.
+
+\subsection{Masa acústica}
+ Un tubo abierto en ambos extremos y con paredes rígidas se comporta como una masa acústica si es lo suficientemente corto como para que el aire en su interior se mueva como un todo sin compresión apreciable.  
+Como condición de contorno, en un extremo del tubo que da al aire libre se tiene que la presión acústica \(p_A\) es aproximadamente nula, ya que la presión en el borde coincide con la presión atmosférica. Por este motivo, en dicho extremo abierto la impedancia acústica puede aproximarse como \(Z_A = 0\). Esta aproximación también puede justificarse considerando que la impedancia de radiación del aire, similar a la de un pistón ideal radiando en aire libre, es muy pequeña en comparación con la impedancia característica del tubo.  
+Esto no implica que el tubo no radie sonido, sino que el medio exterior no permite el establecimiento de un campo de presión acústica significativo en el extremo. El efecto dominante es entonces el movimiento de las partículas de aire adyacentes al extremo abierto, lo que introduce una inercia asociada a la masa de aire puesta en movimiento.
+
+En este caso, el modelo y las condiciones de borde son válidas mientras el radio \(a\) del tubo sea pequeño. Al aumentar el radio del tubo, la impedancia de radiación del aire se vuelve significativa, incrementando la componente resistiva asociada a la radiación, mientras que la componente reactiva asociada a la masa acústica efectiva disminuye.
+
+\begin{equation}
+Z_A = R_{rad} + j\omega M_{eff}
+\end{equation}
+
+Así, el modelo propuesto para definir la masa acústica queda delimitado por:
+
+\begin{itemize}
+    \item Radio del tubo (en metros) no demasiado pequeño, para poder despreciar las pérdidas viscosas.
+    \item Radio del tubo no demasiado grande, de modo que puedan despreciarse las resonancias transversales.
+    \item Modelo válido para \(0.05/\sqrt{f} < a < 10/f\), con \(f\) en Hz.
+    \item Debido al diámetro del tubo y al tipo de acoplamiento con el medio exterior, deben considerarse correcciones de borde.
+\end{itemize}
+
+
+Teniendo en cuenta esto y tomando bajo análisis un tubo de largo \(l'\) se designa la impedancia acústica en el extremo abierto como \(Z_A = 0\) y la impedancia vista por la fuente hacia dentro del tubo como,
+
+
+\begin{equation}
+Z_A = j \frac{\rho_0 c}{\pi a^2} \tan(k\ell')
+\label{eq:imp_acustica_masa}
+\end{equation}
+
+
+
+donde:
+\begin{itemize}
+\item $\rho_0$ es la densidad del gas en kg/m$^3$
+\item $c$ es la velocidad del sonido en m/s
+\item $a$ es el radio del tubo en m
+\item $k$ es el número de onda $k=\omega/c$ en m$^{-1}$
+\end{itemize}
+
+Considerado que en el rango audible (20 Hz a 20 kHz) el numero de onda $k$ varia entre 0,366 a 366 y que los largos típicos del tubo estan en algunos centimetros, como además que el rango de análisis es en bajas o medias frecuencias de todo el rango audible, entonces se puede considerar que el término $kl'$ se encuentra en un rango de valores pequeños y por lo tanto,
+ 
+\begin{equation}
+\tan(k\ell') \approx k\ell' + \frac{(k\ell')^3}{3}
+\end{equation}
+
+Si $k\ell' < 1/6$, el segundo término será menor que el 5\% del primero, por lo tanto,
+
+\begin{equation}
+Z_A \approx j\omega \frac{\rho_0 \ell'}{\pi a^2}
+      \approx j\omega M_A \quad \text{N·s/m}^5
+\end{equation}
+
+De tal forma que se puede definir la masa acústica
+
+
+\begin{equation}
+M_A \approx \frac{\rho_0 \ell'}{\pi a^2}
+\quad \text{masa acústica en kg/m}^4
+\end{equation}
+
+
+\subsubsection*{Correcciones de borde}
+
+La mayoría de las masas acústicas se materializan como tubos que finalizan en uno o ambos extremos, ya sea abiertos al aire libre o conectados a una cavidad de gran volumen. En el régimen de validez del modelo, el aire contenido en el tubo se comporta como un único elemento inercial, moviéndose como un bloque de dimensiones equivalentes a las del conducto, sin que se establezcan gradientes de presión apreciables en su interior. Cuando este “bloque” de aire alcanza el extremo abierto del tubo, su movimiento no se interrumpe bruscamente: las partículas de aire que salen del conducto conservan parcialmente su velocidad antes de dispersarse en el medio circundante. Como consecuencia, una porción de aire exterior al tubo participa del movimiento, sumándose a la inercia del sistema. Desde el punto de vista del modelo, este efecto es equivalente a una extensión efectiva de la longitud del tubo, conocida como corrección de borde, que debe ser tenida en cuenta al calcular la masa acústica total.
+
+\subsubsection*{Extremo en bafle infinito (flanged)}
+
+Si el extremo abierto del tubo termina en una pared (bafle infinito) y $a < \lambda/25$, la corrección de extremo es
+
+\begin{equation}
+\ell'' = \frac{M_A \pi a^2}{\rho_0}
+       = \frac{8a}{3\pi}
+       \approx 0.85a
+\end{equation}
+
+La masa total pasa a ser
+
+\begin{equation}
+M_A = \frac{\rho_0(\ell' + \ell'')}{\pi a^2}
+    = \frac{\rho_0 \ell}{\pi a^2}
+\end{equation}
+
+Si ambos extremos están en un bafle infinito entonces se debe considerar el doble de la corrección,
+
+\begin{equation}
+M_A = \frac{\rho_0(\ell' + 2\ell'')}{\pi a^2}
+    = \frac{\rho_0 \ell}{\pi a^2}
+\end{equation}
+
+\subsubsection*{Extremo al aire libre (unflanged)}
+
+Si el extremo abierto termina al aire libre y $a < \lambda/25$, la corrección de extremo es menor debido a que el estado organizado del aire que estaba dentro del tubo decae más rápidamente:
+
+\begin{equation}
+\ell'' = \frac{M_A \pi a^2}{\rho_0}
+       = \frac{2a}{\pi}
+       \approx 0.64a
+\end{equation}
+
+Hay que tener en cuenta que un tubo abierto al aire libre en ambos extremos puede modelarse como una masa acústica con correcciones de borde en ambos extremos. Sin embargo, dicha masa solo se manifiesta acústicamente cuando una fuente impone una diferencia de presión que acelera coherentemente el aire contenido en el conducto.
+
+
+\subsection{Compliancia acústica}
+
+En el caso de una masa acústica formada por un tubo abierto en ambos extremos, al resolver la ecuación de onda unidimensional con la condición de presión acústica nula en el extremo abierto, se obtiene la impedancia acústica dada por la ecuación \ref{eq:imp_acustica_masa}. En este régimen, y para longitudes pequeñas en comparación con la longitud de onda, el tubo se comporta como un elemento inercial.
+
+Por otro lado, si se considera un tubo abierto en un extremo y rígidamente cerrado en el otro, la condición de borde cambia, imponiendo velocidad de partícula nula en el extremo cerrado. En este caso, la impedancia acústica de entrada resulta
+
+\begin{equation}
+Z_A = -j \frac{\rho_0 c}{\pi a^2} \cot(k\ell')
+\label{eq:imp_acustica_compliancia}
+\end{equation}
+
+
+
+donde,
+\begin{itemize}
+    \item $Z_A = Z_s / S = Z_s/(\pi a^2)$,
+    \item $\rho_0$ es la densidad del gas en kg/m$^3$,
+    \item $c$ es la velocidad del sonido en m/s,
+    \item $a$ es el radio del tubo en m,
+    \item $k$ es el número de onda $k=\omega/c$ en m$^{-1}$,
+    \item $\ell'$ es la longitud del tubo en m.
+\end{itemize}
+
+
+Al igual que se analizó con la masa acústica, para valores de $k$ que no sean demasiado grandes, la función cotangente puede aproximarse por
+
+\begin{equation}
+\cot(k\ell') = \frac{1}{k\ell'} - \frac{k\ell'}{3}
+\end{equation}
+
+Por lo tanto,
+
+$$ Z_A = -j \frac{\rho_0 c}{\pi a^2} \frac{1}{k\ell'} + j \frac{\rho_0 c}{\pi a^2} \frac{k\ell'}{3}  $$
+
+Teniendo en cuena que $ k = \omega / c$ 
+
+$$ Z_A = -j \frac{1}{\omega \frac{\pi a^2 \ell'}{\rho_0 c^2}} + j \frac{\omega}{3} \frac{\rho_0 \ell'}{\pi a^2}  $$
+
+Como \(S = \pi a^2\) es la superficie del tubo en analisis, entonces al multiplicar por el largo \(\ell'\) del mismo, se obtiene el volumen de la cavidad. 
+
+
+\begin{equation}
+    Z_A = -j\frac{1}{\omega (V/\rho_0 c^2)} + j\omega \frac{M_A}{3}
+\end{equation}
+
+
+Notar que ahora el segundo termino representa la masa acustica del tubo abierto-cerrado pero no por completo, sino que es un tercio de la masa total que representaria un tubo abierto-abierto.
+Teniendo en cuenta que en bajas frecuencias el primer termino es el que adquiere preponderancia, teniendo un componente concentrado que describe su impedancia de la siguiente forma. (Para $\ell' < \lambda/10$)
+
+\begin{equation}
+Z_A = -j\frac{1}{\omega C_A}
+\end{equation}
+
+Mientras que a medida que la frecuencia aumenta empieza a haber una componente de masa que afecta el comportamiento, siendo así una cavidad (o tubo abierto-cerrado) un elemento no ideal conformado por una magnitud de compliancia y otra de masa.
+
+De esta deducción la compliancia acústica está dada por
+
+\begin{equation}
+C_A = \frac{V}{\rho_0 c^2} = \frac{V}{\gamma P_0}
+\end{equation}
+
+con unidades de m$^5$/N.
+
+\subsubsection*{Limitaciónes de una compliancia acústica}
+
+
+El modelo es valido mientras que la longitud de onda sea mas grande que las dimensiones de la cavidad. Cuando ya empieza a ser comparable o la longitud de onda es menor a las dimensiones de la cavidad, entonces aparecerán modos. Esto rompe con el concepto de compliancia acústica, en el cual se tiene que su interior siempre se mantiene a la misma presión. 
+
+Una compliancia acústica obtenida mediante la compresión del aire en un volumen cerrado puede representarse como un dispositivo de dos terminales; sin embargo, uno de los terminales se encuentra siempre al potencial de referencia, es decir, fuera del recinto de volumen $V$, donde la presión es atmosférica, o equivalentemente, la presión acústica es nula $p = 0$. Por este motivo, \textbf{nunca es posible insertar} una compliancia acústica entre masas acústicas o resistencias acústicas.
+
+Para obtener una compliancia acústica en serie es necesario emplear un diafragma o una membrana tensada. Naturalmente, los diafragmas y las membranas presentan resonancias a determinadas frecuencias, por lo que el rango en el cual se comportan como compliancias está limitado a frecuencias muy por debajo de su resonancia fundamental.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/cap1/compliance_diaphragm.png}
+\caption{Ejemplo de una compliancia acústica obtenida a partir de un diafragma o membrana tensada}
+\label{fig:compliance_diaphragm}
+\end{figure}
+
+\subsection{Efectos parásitos y límites del modelo}
+
+A medida que la longitud del tubo aumenta en relación con la longitud de onda, los efectos distribuidos dejan de ser despreciables, requiriendo la inclusión de términos correctivos de masa y compliancia en el modelo de elementos concentrados (lumped elements). Pueden así establecerse 3 rangos que permiten determinar cual modelo utilizar.
+
+\begin{itemize}
+    \item Modelo Ideal \rightarrow \quad  \(\ell' < \lambda / 16 \)
+    \item Modelo corregido \rightarrow \quad \(\lambda/8 < \ell' < \lambda/16\)
+    \item Modelo distribuido \rightarrow \quad \( \ell' < \lambda/8\)
+\end{itemize}
+
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/cap1/masa_acustica_ideal.png}
+        \caption{Masa Acústica}
+        \label{fig:masa_acustica_ideal}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/cap1/compliancia_acustica_ideal.png}
+        \caption{Compliancia Acústica}
+        \label{fig:compliancia_acustica_ideal}
+    \end{subfigure}
+    \caption{Modelos ideales o concentrados de masa acústica y compliancia acústica. }
+    \label{fig:masa_compliancia_modelos_ideales}
+\end{figure}
+
+Considerando un tubo de longitud $\ell' = 25\ \text{cm}$, el régimen de validez del modelo lumped ideal se extiende hasta frecuencias tales que $\ell' < \lambda/16$, lo que implica $\lambda > 4\ \text{m}$. En consecuencia, el modelo presenta un error del orden del 5\% mientras $f < 85\ \text{Hz}$. Este criterio es independiente de si el tubo se modela como una masa o como una compliancia acústica, ya que dicha caracterización depende exclusivamente de las condiciones de borde. Por ejemplo, un tubo abierto en un extremo y excitado por un parlante en el otro puede analizarse como una masa acústica en este rango de frecuencias, mientras que un tubo rígidamente cerrado en un extremo y excitado por un parlante en el otro se comporta como una compliancia acústica dentro del mismo régimen de validez.
+
+Luego en caso de que se tenga que analizar dicho sistema para frecuencias \(85 \text{ Hz} < f < 170 \text{ Hz}\), se debe considerar el modelo corregido, tal como se ve en la figura \ref{fig:masa_compliancia_modelos_corregidos}
+
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/cap1/masa_acustica_corregida.png}
+        \caption{Masa Acústica}
+        \label{fig:masa_acustica_corregida}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/cap1/compliancia_acustica_corregida.png}
+        \caption{Compliancia Acústica}
+        \label{fig:compliancia_acustica_corregida}
+    \end{subfigure}
+    \caption{Modelos ideales corregidos de masa acústica y compliancia acústica. }
+    \label{fig:masa_compliancia_modelos_corregidos}
+\end{figure}
+
+
+Para frecuencias tales que $\ell' < \lambda/8$, el modelo lumped ideal y el corregido dejan de ser suficiente y resulta necesario emplear un circuito equivalente que incluya simultáneamente efectos de masa y compliancia acústica. En este régimen, el circuito simétrico mostrado en la figura \ref{fig:masa_compliancia_modelo_completo} proporciona una aproximación adecuada del comportamiento del tubo, manteniendo un error del orden del 5\%.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\linewidth]{figures/cap1/masa_compliancia_modelo_completo.png}
+\caption{Circuito completo de un tubo sin importar las condiciones de borde y para toda frecuencia}
+\label{fig:masa_compliancia_modelo_completo}
+\end{figure}
+
+\subsection{Resistencias Acústicas}
+
+Cualquier dispositivo en el cual el flujo de gas, o velocidad volumétrica, ocurre en fase y es directamente proporcional a la presión acústica aplicada puede representarse como una resistencia acústica pura. En este tipo de elementos no existe almacenamiento de energía, sino que toda la energía suministrada es disipada, principalmente en forma de calor, como consecuencia de pérdidas por fricción. En términos de impedancia acústica, una resistencia acústica ideal se caracteriza por una impedancia puramente real,
+
+\begin{equation}
+Z_A = R_A
+\end{equation}
+
+En el caso de una masa acústica, el aire se encuentra en movimiento y se produce una acumulación de energía cinética, mientras que en una compliancia acústica el aire se comprime y ocurre una acumulación de energía potencial. A diferencia de estos elementos reactivos, en una resistencia acústica no se almacena energía, sino que esta se disipa principalmente en forma de calor debido a pérdidas viscosas y por rozamiento.
+
+De forma análoga a los componentes eléctricos capacitor, bobina y resistor, en acústica se cumple que:
+
+\begin{itemize}
+    \item Masa acústica $\rightarrow$ la presión acústica se adelanta a la velocidad volumétrica en $90^\circ$.
+    \item Compliancia acústica $\rightarrow$ la presión acústica se atrasa respecto de la velocidad volumétrica en $90^\circ$.
+    \item Resistencia acústica $\rightarrow$ la presión acústica y la velocidad volumétrica están en fase ($0^\circ$).
+\end{itemize}
+
+Existen cuatro formas principales de resistencias acústicas comúnmente empleadas en dispositivos acústicos,
+
+\begin{itemize}
+    \item Pantallas de malla fina fabricadas en metal o textiles.
+    \item Tubos de diametro fino (tubos capilares).
+    \item Ranuras angostas.
+    \item Materiales acústicos porosos de celda abierta
+\end{itemize}
+
+El origen de la resistencia acústica se encuentra en las pérdidas viscosas del aire y en todos los casos el mecanismo de disipación es el mismo. En las proximidades de las paredes de un tubo, ranura o poro, la velocidad de las partículas de aire debe anularse debido a la condición de no deslizamiento que ya existe en dicha frontera impuesta por el material. Como consecuencia, se establecen gradientes de velocidad entre capas adyacentes de aire, lo que da lugar a fricción interna. Esta fricción provoca la disipación de energía acústica en forma de calor. Cuando las regiones afectadas por estos gradientes ocupan una porción significativa de la sección transversal del conducto, las pérdidas viscosas se vuelven apreciables y el comportamiento resistivo domina.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\linewidth]{figures/cap1/acoustic_resistances_section_losses_viscosity.png}
+\caption{Disminución de la vibración de las particulas en cercanías a una superficie. En (a) se muestran las regiones donde las perdidas viscosas ocurren.)}
+\label{fig:masa_compliancia_modelo_completo}
+\end{figure}
+
+
+Las pantallas de malla fina se utilizan con frecuencia en transductores acústicos debido a su bajo costo, facilidad de fabricación y estabilidad, además de presentar una reactancia inductiva despreciable en un amplio rango de frecuencias. Las ranuras angostas permiten, además, obtener resistencias ajustables mediante la variación de su ancho. Los tubos presentan la desventaja de que, salvo que su diámetro sea muy pequeño —lo que conduce a resistencias elevadas—, suelen introducir una reactancia inductiva apreciable asociada a la masa acústica del aire contenido en ellos. No obstante, cuando se desea una combinación de resistencia e inercia acústica, los tubos resultan elementos útiles.
+
+Los materiales porosos, tales como fibras, cerámicos porosos o metales sinterizados\footnote{El sinterizado es un proceso metalúrgico mediante el cual polvos metálicos se compactan y se calientan a una temperatura inferior a su punto de fusión, logrando la unión de las partículas sin llegar a fundirlas completamente. El material resultante presenta una estructura porosa de celda abierta, lo que permite el paso del aire y favorece la aparición de pérdidas viscosas, razón por la cual los metales sinterizados se emplean como resistencias acústicas.}
+, se emplean ampliamente en aplicaciones industriales y pueden modelarse como combinaciones de resistencia y masa acústica. En todos los casos, la resistencia acústica surge de la disipación de energía causada por el movimiento relativo entre capas de aire en presencia de fricción viscosa.
+
+En el marco de los modelos concentrados, una resistencia acústica introduce amortiguamiento en el sistema sin modificar la frecuencia de resonancia ideal determinada por las masas y compliancias acústicas, aunque sí afecta el factor de calidad del sistema y la amplitud de la respuesta, tal como puede ocurrir en terminos eléctricos.
+
+Para un tratamiento más detallado de los materiales resistivos, sus ecuaciones y otros efectos adicionales, se remite al lector a \cite{BeranekMellow2012}.
+
